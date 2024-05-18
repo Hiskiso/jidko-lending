@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.header-wrapper {
+  height: 100vh;
+  background-color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-content {
+  text-align: center;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.body-content {
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-description {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.right-description {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-end;
+}
+.next-description {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1em;
+}
+.title {
+  text-align: start;
+}
+.content-wrapper {
+  display: flex;
+  gap: 10vw;
+}
+.first-img {
+  width: 100%;
+}
+
+.discription {
+  border-top: solid;
+}
+
+.img-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+
+button {
+  background: white;
+  border: unset;
+  border-radius: unset;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.fast-buy {
+  border-bottom: solid;
+  width: 100%;
+}
+
+.discription-bait{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 1em;
+}
+
+
+@media (max-width: 600px) {
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10vw;
+  }
+    
+  .left-description {
+    justify-content: space-between;
+  }
+  .right-description {
+    justify-content: space-around;
+  }
+  .title {
+    border-bottom: solid;
+  }
+  button {
+    width: 31em;
+    height: 4em;
+  }
+
+  .fast-buy {
+    border-bottom: none;
+  }
+
+  .body-content {
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50vh;
+  }
+
+  .img-wrapper {
+    display: flex;
+    
+  }
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1.2em;
+}
