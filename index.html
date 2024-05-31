@@ -132,5 +132,15 @@
     <footer>
       <p>&copy; 2024 LLC Garbage. Все права защищены</p>
     </footer>
+
+    <script>
+      let buttons = document.getElementsByClassName("fast-buy")
+
+      for (const button of buttons) {
+        button.addEventListener("click", ()=>{
+          window.open("./order", "_self")
+        })
+      }
+    </script>
   </body>
 </html>
