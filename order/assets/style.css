@@ -86,3 +86,31 @@ input {
     border-bottom: solid;
     border-bottom-color: var(--pro-color);
   }
+
+  @media (max-width: 1000px) {
+    .form{
+        
+    flex-direction: column;
+    }
+
+    input{
+        width: 90%;
+    }
+.order_button{
+    width: 90%;
+
+   
+}  
+img.image{
+    
+    height: 50vw;
+}
+}
+
+@media (min-width:2000px) {
+    .form{
+        
+    justify-content: center;
+
+    }
+}
